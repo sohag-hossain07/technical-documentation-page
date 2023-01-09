@@ -1,0 +1,143 @@
+/* css variables */
+:root {
+  --primary-color: #242b2e;
+  --secondary-color: #f7f7f7;
+  --white-color: #fff;
+  --border-color: rgb(74, 75, 75);
+  --code-text-color: #f9f9f9;
+}
+
+/* extra small screen */
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  #nav-bar {
+    width: 100%;
+    position: static;
+  }
+
+  #main-doc {
+    width: 100%;
+    position: static;
+  }
+
+  #nav-bar {
+    border-right: 0;
+  }
+
+  .title-and-logo {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  #nav-items {
+    display: none;
+  }
+}
+
+/* small screen */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  #nav-bar {
+    width: 100%;
+    position: static;
+  }
+
+  #main-doc {
+    width: 100%;
+    position: static;
+  }
+
+  #nav-bar {
+    border-right: 0;
+  }
+
+  .title-and-logo {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  #nav-items {
+    display: none;
+  }
+}
+
+/* medium screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #nav-bar {
+    width: 100%;
+    position: static;
+  }
+
+  #main-doc {
+    width: 100%;
+    position: static;
+  }
+
+  #nav-bar {
+    border-right: 0;
+  }
+
+  .title-and-logo {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  #nav-items {
+    display: none;
+  }
+}
+
+/* ==================================================================== 
+                      large scree starts 
+==================================================================== */
+
+/* large screen */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #menu-items {
+    display: none;
+  }
+
+  #nav-items {
+    display: block !important;
+  }
+
+  #go-to-top {
+    display: none !important;
+  }
+}
+
+/* extra large screen */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  #menu-items {
+    display: none;
+  }
+
+  #nav-items {
+    display: block !important;
+  }
+
+  #go-to-top {
+    display: none !important;
+  }
+}
+
+/* x-extra large screen */
+@media screen and (min-width: 1400px) {
+  #menu-items {
+    display: none;
+  }
+
+  #nav-items {
+    display: block !important;
+  }
+
+  #go-to-top {
+    display: none !important;
+  }
+}

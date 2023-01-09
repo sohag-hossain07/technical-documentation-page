@@ -1,0 +1,196 @@
+/* css variables */
+:root {
+  --primary-color: #242b2e;
+  --secondary-color: #f7f7f7;
+  --white-color: #fff;
+  --border-color: rgb(74, 75, 75);
+  --code-text-color: #f9f9f9;
+  --color-pink: #ff1493;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  overflow-x: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 200ms;
+}
+
+/* nav section starts */
+#nav-bar {
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  width: 300px;
+  min-width: 290px;
+  height: 100%;
+  border-right: 3px solid var(--border-color);
+}
+
+.title-and-logo {
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#menu-items {
+  padding: 12px 5px;
+  cursor: pointer;
+}
+
+/* #menu {
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+} */
+
+.menu-bar {
+  width: 20px;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+.menu-bar::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: -1px;
+  width: 23px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.menu-bar::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  right: -1px;
+  width: 23px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.x-mark {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#nav-items {
+  height: 88%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.nav-item a {
+  color: var(--primary-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.nav-item > a {
+  width: 100%;
+  display: block;
+  padding: 1rem 0 1rem 1.5rem;
+}
+
+/* ============================ main section starts ============================ */
+#main-doc {
+  position: relative;
+  left: 300px;
+  width: calc(100% - 300px);
+  height: 100vh;
+}
+
+.main-section {
+  width: 95%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 24px 10px;
+}
+
+.section-header {
+  font-family: Poppins, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.text,
+.section-list .list-item-section {
+  font-family: system-ui, sans-serif;
+  margin: 1rem 0 1rem 1rem;
+  color: var(--primary-color);
+}
+
+.section-list .list-item-section {
+  list-style: disc;
+  margin-left: 2.1rem;
+}
+
+.code-text {
+  color: var(--primary-color);
+  background-color: var(--code-text-color);
+  margin: 1rem 0 1rem 1.5rem;
+  padding: 1rem;
+  display: block;
+  border-radius: 5px;
+}
+
+/* go to top button */
+#go-to-top a {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: var(--color-pink);
+  font-size: 1.5rem;
+  background-color: var(--secondary-color);
+  box-shadow: 5px 5px 15px #ede7e7, -5px -5px 15px #b9b9bb63;
+  position: absolute;
+  right: 15%;
+  bottom: 80px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  transition: 0s;
+}
+
+#go-to-top a:hover {
+  color: var(--white-color);
+  background: linear-gradient(144deg, deeppink, rgb(255, 81, 0));
+}
+
+/*
+font-family: fira code, fira sans, fancy slider, cursive, satisfy, monospace, open sans, rubik, poppins, fantasy;
+*/
